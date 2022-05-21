@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_ex2</title>
+    <style>
+        #container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Registration</h1>
+    <hr>
+    <form action="#" method="GET">
+        <table width="70%">
+            <tr>
+                <td><label for="firstname">
+                        Name
+                    </label> </td>
+                <td>
+                    :&nbsp;<input type="text" name="first_name" id="firstname">
+                </td>
+                <td>
+                    <label for="lastname">Last Name</label>
+                </td>
+                <td>:&nbsp;<input type="text" name="last_name" id="lastname"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    : <input type="radio" name="gender" checked>Male
+                    <input type="radio" name="gender">Female
+                </td>
+                <td>
+                    Come From
+                </td>
+                <td>
+                    : <select name="Country">
+                        <option value="pp">Phnom Penh</option>
+                        <option value="bb">Battambang</option>
+                        <option value="sr">Siem Reap</option>
+                        <option value="ks">Kompung Som</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    : <input type="email" name="email" id="email">
+                </td>
+                <td>
+                    <label for="tel">Phone</label>
+                </td>
+                <td>
+                    : <input type="tel" name="phone" id="tel">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="id_num">ID Number</label>
+                </td>
+                <td>
+                    :&nbsp;<input type="text" name="id_num" id="id_num">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <fieldset width="80">
+            <legend><b>Family Information</b></legend>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <label for="father_name">Father Name</label>
+                    </td>
+                    <td>
+                        : <input type="text" name="father_name" id="father_name">
+                    </td>
+                    <td>
+                        <label for="father_age">Age</label>
+                    </td>
+                    <td>
+                        : <input type="text" name="father_age" id="father_age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mother_name">Mother Name</label>
+                    </td>
+                    <td>
+                        : <input type="text" name="mother_name" id="mother_name">
+                    </td>
+                    <td>
+                        <label for="mother_age">Age</label>
+                    </td>
+                    <td>
+                        : <input type="text" name="mother_age" id="mother_age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="father_address">Father Address</label>
+                    </td>
+                    <td colspan="3">
+                        : <input type=" text" name="fa_address" style="width: 98%;" id="father_address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mother_address">Mother Address</label>
+                    </td>
+                    <td colspan="3">
+                        : <input type=" text" name="ma_address" size="70" style="width: 98%;" id="mother_address">
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+            <b>Describe Your Family</b><br>
+            <textarea name="family_description" id="" cols="120" rows="6" valign="top"></textarea>
+
+        </fieldset>
+
+    </form>
+    <br>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>
+                <b>Address</b>
+            </legend>
+            <table width="70%"">
+                <tr>
+                    <td>Province</td>
+                    <td>
+                : <select name=" province">
+                <option value="pp">Phnom Penh</option>
+                <option value="sr">Siem Reap</option>
+                <option value="ks">Kompung Som</option>
+                <option value="bb">Battambong</option>
+                </select>
+                </td>
+                <td>
+                    District
+                </td>
+                <td>:
+                    <select name="district" max="90%">
+                        <option value="tk">tuol kork</option>
+                        <option value="pt">Psar Thmei</option>
+                        <option value="dp">Daun Penh</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td>Commune</td>
+                    <td>
+                        : <select name="commune" max="90%">
+                            <option value="bt">Boeng Trabaek</option>
+                            <option value="op">Oulampik</option>
+                            <option value="pc">Phsar Chas</option>
+                        </select>
+                    </td>
+                    <td>Village</td>
+                    <td>:
+                        <select name="village" max="90%">
+                            <option value="tpc">Tror Peang chhuk</option>
+                            <option value="btb">berk trobol</option>
+                            <option value="psd">prek sandek</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="street_no">Street No.</label>
+                    </td>
+                    <td>
+                        : <input type="text" name="street_no" id="street_no">
+                    </td>
+                    <td>
+                        <label for="home_no">Home No.</label>
+                    </td>
+                    <td>
+                        : <input type="text" name="home_no" id="home_no">
+                    </td>
+                </tr>
+            </table>
+
+
+        </fieldset>
+    </form>
+    <br>
+    <form action="#" method="get">
+        <table width="50%">
+            <tr>
+                <div id="container">
+                    <button id="register">Register Now</button>
+                    <button id="cancel">Cancel</button>
+                </div>
+
+
+            </tr>
+
+        </table>
+    </form>
+
+</body>
+
+</html>
